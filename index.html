@@ -13,14 +13,12 @@
   <body>
     <h1 class="mdc-typography--display1">Hello, World!</h1>
     <button type="button" class="mdc-button mdc-button--raised">
-      hello
+      Welcome to Lane Tech.
+    </button>
+     <button type="button" class="mdc-button mdc-button--raised">
+      Hello World
     </button>
     
-    
-    var msg = new SpeechSynthesisUtterance('Hello World');
-window.speechSynthesis.speak(msg);
-    var msg = new SpeechSynthesisUtterance('Hello World');
-window.speechSynthesis.speak(msg);
     
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -38,9 +36,8 @@ window.speechSynthesis.speak(msg);
         
         // reusable function to use the speech API
         
-         function sayIt () {
-           var msg = new SpeechSynthesisUtterance(sa dude
-                               );
+         function sayIt (setOfWords) {
+           var msg = new SpeechSynthesisUtterance(setOfWords);
            window.speechSynthesis.speak(msg);
          }
         
@@ -48,7 +45,7 @@ window.speechSynthesis.speak(msg);
             
         // hook up event handler on the buttons
         
-         $("button").on("click", function(SetOfWords) {
+         $("button").on("click", function() {
            sayIt($(this).text());
          });
         
